@@ -1,7 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880');
 
 html {
-  font-family: Gilroy, sans-serif;
-}
+  font-family: 'Gilroy-Regular', sans-serif;}
 
 ._container {}
 
@@ -25,11 +25,11 @@ html {
   }
 
   &__company  {
+    font-family: Gilroy-Bold , sans-serif;
     font-size: 28px;
-    font-weight: 600;
     line-height: normal;
-    padding: 16px;
   }
+
   &__search {
     width: 40%;
     max-width: 600px;
@@ -80,8 +80,8 @@ html {
     padding: 25px 30px;
     border: 1px solid #000;
     box-shadow: 2px 2px 0 #000;
+    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
-    font-weight: 600;
     line-height: normal;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -118,6 +118,7 @@ html {
   display: flex;
   align-items: center;
   background: #E6FFE1;
+  border-bottom: 1px solid #A3CE9B;
 
   @media (max-width: 1300px) {
     padding: 30px 80px;
@@ -144,6 +145,7 @@ html {
     }
 
     &-text {
+      font-family: 'Gilroy-Medium', sans-serif;
       font-size: 18px;
       font-weight: 600;
       line-height: normal;
@@ -159,13 +161,185 @@ html {
   }
 
   &__list-item {
+    font-family: 'Gilroy-Regular', sans-serif;
     padding: 0 26px;
     font-size: 18px;
-    font-weight: 500;
     line-height: normal;
 
     @media (max-width: 1024px) {
       padding: 0 20px;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E6FFE1;
+  padding: 30px 100px;
+
+  @media (max-width: 1300px) {
+    padding: 35px 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 18px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 700px) {
+    background-color: #ffffff;
+    background-image: url(../img/main/bgi.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    padding: 40px 10px;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 40%;
+    
+    @media (max-width: 1300px) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 700px) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 90px;
+    line-height: 110%;
+    margin-bottom: 16px;
+
+    @media (max-width: 1300px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 769px) {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 700px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 24px;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 769px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 700px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 24px;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 769px) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 700px) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &-bold {
+      font-family: 'Gilroy-Bold', sans-serif;
+    }
+  }
+
+  &__button {
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-color: #FFE500;
+    padding: 25px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+
+    @media (max-width: 1024px) {
+      padding: 15px 25px;
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    flex: 0 0 60%;
+    position: relative;
+    padding: 22%;
+
+    @media (max-width: 1300px) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__img-item {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    object-fit: contain;
+
+    @media (max-width: 1300px) {
+      width: 120%;
+      right: -80px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 140%;
     }
   }
 }
