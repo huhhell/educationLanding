@@ -112,3 +112,60 @@ html {
     }
   }
 }
+
+.nav {
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  background: #E6FFE1;
+
+  @media (max-width: 1300px) {
+    padding: 30px 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 18px 60px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-right: 40px;
+    border-right: 1px solid #A3CE9B;
+
+    &-img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &-text {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    & a {
+      color: #000000;
+    }
+  }
+
+  &__list-item {
+    padding: 0 26px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+}

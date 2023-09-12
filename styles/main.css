@@ -111,4 +111,60 @@ html {
   }
 }
 
+.nav {
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  background: #E6FFE1;
+}
+@media (max-width: 1300px) {
+  .nav {
+    padding: 30px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .nav {
+    padding: 18px 60px;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+.nav__categories {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-right: 40px;
+  border-right: 1px solid #A3CE9B;
+}
+.nav__categories-img {
+  width: 32px;
+  height: 32px;
+}
+.nav__categories-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__list a {
+  color: #000000;
+}
+.nav__list-item {
+  padding: 0 26px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1024px) {
+  .nav__list-item {
+    padding: 0 20px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
