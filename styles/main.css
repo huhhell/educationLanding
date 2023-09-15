@@ -980,4 +980,182 @@ html {
   border-radius: 30px;
 }
 
+.tutors {
+  padding: 100px;
+  background-color: #EEE7FF;
+}
+@media (max-width: 1300px) {
+  .tutors {
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .tutors {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 769px) {
+  .tutors {
+    padding: 40px 10px;
+  }
+}
+.tutors__title {
+  text-align: center;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 45px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .tutors__title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+}
+.tutors__text {
+  color: #797979;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .tutors__text {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .tutors__text {
+    font-size: 18px;
+  }
+}
+.tutors__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 769px) {
+  .tutors__list {
+    flex-wrap: wrap;
+  }
+}
+.tutors__item {
+  position: relative;
+  flex: 0 1 25%;
+  border: 3px solid #000;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  border-radius: 34px;
+  overflow: hidden;
+}
+@media (max-width: 769px) {
+  .tutors__item {
+    flex: 1 1 45%;
+  }
+}
+.tutors__item-person {
+  position: relative;
+  padding: 36%;
+  border-bottom: 3px solid #000000;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.tutors__item-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: contain;
+  height: 100%;
+  z-index: 1;
+}
+.tutors__item-name {
+  position: absolute;
+  font-family: "Gilroy-Bold", sans-serif;
+  top: 22px;
+  right: 22px;
+  font-size: 24px;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  .tutors__item-name {
+    font-size: 18px;
+  }
+}
+.tutors__item-info {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 35px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1700px) {
+  .tutors__item-info {
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+.tutors__item-course-name {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+@media (max-width: 1700px) {
+  .tutors__item-course-name {
+    text-align: center;
+  }
+}
+@media (max-width: 1300px) {
+  .tutors__item-course-name {
+    font-size: 18px;
+  }
+}
+.tutors__item-course-learn {
+  font-family: "Gilroy-Medium", sans-serif;
+  color: #797979;
+  line-height: 120%;
+}
+@media (max-width: 1700px) {
+  .tutors__item-course-learn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.tutors__item-button {
+  background-color: #FFFACD;
+  padding: 17px 27px;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 0 #000000;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}
+@media (max-width: 1024px) {
+  .tutors__item-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+.tutors .tutors__item:nth-child(1) .tutors__item-person {
+  background-color: #75FFE6;
+}
+.tutors .tutors__item:nth-child(2) .tutors__item-person {
+  background-color: #7AC7FF;
+}
+.tutors .tutors__item:nth-child(3) .tutors__item-person {
+  background-color: #FF7A7A;
+}
+.tutors .tutors__item:nth-child(4) .tutors__item-person {
+  background-color: #7AC7FF;
+}
+
 /*# sourceMappingURL=main.css.map */
