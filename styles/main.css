@@ -550,6 +550,11 @@ html {
     padding: 30px 60px;
   }
 }
+@media (max-width: 769px) {
+  .why {
+    padding: 30px 10px;
+  }
+}
 .why__title {
   text-align: center;
   font-family: "Gilroy-Bold", sans-serif;
@@ -586,7 +591,8 @@ html {
 @media (max-width: 769px) {
   .why__text {
     font-size: 16px;
-    margin-bottom: 30px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
   }
 }
 .why__list {
@@ -621,8 +627,9 @@ html {
 }
 @media (max-width: 769px) {
   .why__item {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
     padding: 20px;
-    margin-bottom: 20px;
   }
 }
 .why__item-img {
@@ -674,6 +681,125 @@ html {
   .why .why__item:nth-child(5) {
     display: none;
   }
+}
+
+.about {
+  padding: 100px;
+  gap: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F3C7;
+}
+@media (max-width: 1300px) {
+  .about {
+    padding: 30px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    padding: 30px 60px;
+    gap: 3%;
+  }
+}
+@media (max-width: 769px) {
+  .about {
+    padding: 30px 10px;
+    display: block;
+  }
+}
+.about__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 769px) {
+  .about__item {
+    justify-content: flex-start;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .about__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.about__item-img {
+  width: 83px;
+  height: 83px;
+  padding: 20px;
+  border: 3px solid #000;
+  box-shadow: 0 3px 0 #000000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1300px) {
+  .about__item-img {
+    width: 62px;
+    height: 62px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__item-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .about__item-img-item {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__item-img-item {
+    width: 24px;
+    height: 24px;
+  }
+}
+.about__item-title {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+@media (max-width: 1300px) {
+  .about__item-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__item-title {
+    font-size: 16px;
+  }
+}
+.about__item-text {
+  color: #898989;
+  font-size: 18px;
+  line-height: 170%;
+}
+@media (max-width: 1300px) {
+  .about__item-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__item-text {
+    font-size: 14px;
+  }
+}
+.about .about__item:nth-child(1) .about__item-img {
+  background-color: #495AFF;
+}
+.about .about__item:nth-child(2) .about__item-img {
+  background-color: #FF525C;
+}
+.about .about__item:nth-child(3) .about__item-img {
+  background-color: #A535D9;
 }
 
 /*# sourceMappingURL=main.css.map */
