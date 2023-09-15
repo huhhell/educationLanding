@@ -1158,4 +1158,153 @@ html {
   background-color: #7AC7FF;
 }
 
+.price {
+  position: relative;
+  padding: 100px;
+}
+@media (max-width: 1300px) {
+  .price {
+    padding: 50px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .price {
+    padding: 50px 60px;
+  }
+}
+@media (max-width: 769px) {
+  .price {
+    padding: 50px 10px;
+  }
+}
+.price__container {
+  position: relative;
+  z-index: 4;
+  padding: 50px;
+  background-color: #792FD7;
+  border: 2px solid #000;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  border-radius: 38px;
+}
+@media (max-width: 1024px) {
+  .price__container {
+    padding: 30px;
+  }
+}
+@media (max-width: 769px) {
+  .price__container {
+    overflow: hidden;
+  }
+}
+.price__title {
+  position: relative;
+  z-index: 4;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Gilroy-Bold", sans-serif;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1300px) {
+  .price__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .price__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+.price__title-number {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+  padding: 5px;
+  font-size: 50px;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0 #000000;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .price__title-number {
+    font-size: 30px;
+    padding: 3px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 #000000;
+  }
+}
+.price__subtitle {
+  position: relative;
+  z-index: 4;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1300px) {
+  .price__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .price__subtitle {
+    max-width: 40%;
+  }
+}
+@media (max-width: 769px) {
+  .price__subtitle {
+    max-width: unset;
+  }
+}
+.price__button {
+  position: relative;
+  z-index: 4;
+  background-color: #FFE500;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 0 #000000;
+  padding: 25px 35px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+}
+@media (max-width: 1300px) {
+  .price__button {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .price__button {
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 2px 2px 0 #000000;
+  }
+}
+.price__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 120%;
+  z-index: 2;
+}
+@media (max-width: 769px) {
+  .price__img {
+    bottom: 0;
+    right: 50%;
+    height: 100%;
+    transform: translateX(50%);
+    filter: opacity(70%);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
