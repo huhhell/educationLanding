@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 html {
   font-family: 'Gilroy-Regular', sans-serif;
@@ -1537,3 +1538,239 @@ html {
     }
   }
 }
+
+.feedback {
+  padding: 100px;
+
+  @media (max-width: 1300px) {
+    padding: 40px 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 60px;
+  }
+
+  @media (max-width: 769px) {
+    padding: 40px 10px;
+  }
+
+  &__title {
+    font-family: Gilroy-Bold, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    line-height: 120%;
+    margin-bottom: 50px;
+
+    @media (max-width: 1300px) {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-family: Gilroy-Medium, sans-serif;
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 70px;
+
+    @media (max-width: 1300px) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1300px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 769px) {
+      justify-content: center;
+    }
+
+    &-item {
+      padding: 17px 21px;
+      border: 1px solid #000;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      background-color: #ffffff;
+
+      @media (max-width: 1024px) {
+        padding: 10px 14px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    &-info {
+      position: relative;
+      z-index: 4;
+      background-color: #ffffff;
+      flex: 0 0 60%;
+      padding: 55px;
+      border: 3px solid #000;
+      -webkit-border-radius: 56px;
+      -moz-border-radius: 56px;
+      border-radius: 56px;
+
+      @media (max-width: 1300px) {
+        padding: 30px;
+      }
+
+      @media (max-width: 769px) {
+        padding: 15px;
+        flex: 0 0 100%;
+      }
+    }
+
+    &-review {
+      max-width: 50%;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 60px;
+      line-height: 120%;
+      margin-bottom: 15px;
+
+      @media (max-width: 1500px) {
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 35px;
+        max-width: unset;
+      }
+    }
+
+    &-text {
+      max-width: 70%;
+      font-family: Gilroy-Medium, sans-serif;
+      color: #515151;
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: 35px;
+
+      @media (max-width: 1500px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+
+    &-date {
+      font-family: Gilroy-Medium, sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      padding: 20px 35px;
+      background-color: #FFE500;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      border: 3px solid #000;
+      box-shadow: 3px 3px 0 #000000;
+
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-size: 24px;
+      line-height: normal;
+
+
+      @media (max-width: 1300px) {
+        right: 30px;
+        bottom: 30px;
+        padding: 10px 25px;
+        font-size: 18px;
+        border: 2px solid #000;
+      }
+
+      @media (max-width: 769px) {
+        right: 15px;
+        bottom: 15px;
+        box-shadow: unset;
+        padding: 5px 10px;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 80%;
+      border: 3px solid #000;
+      border-top-right-radius: 56px;
+      border-bottom-right-radius: 56px;
+      background-color: #7BFF78;
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+
+      &-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      &-boy {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(60%);
+        height: 160%;
+
+        @media (max-width: 1500px) {
+          height: 140%;
+        }
+      }
+
+      &-icon {
+        position: absolute;
+        top: 0;
+        right: 65%;
+        transform: translateY(-100%);
+
+        @media (max-width: 1500px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
