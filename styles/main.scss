@@ -1145,7 +1145,7 @@ html {
   @media (max-width: 1024px) {
     padding: 50px 60px;
   }
-  
+
   @media (max-width: 769px) {
     padding: 50px 10px;
   }
@@ -1168,6 +1168,7 @@ html {
       overflow: hidden;
     }
   }
+
   &__title {
     position: relative;
     z-index: 4;
@@ -1176,7 +1177,7 @@ html {
     font-family: 'Gilroy-Bold', sans-serif;
     line-height: 120%;
     margin-bottom: 30px;
-    
+
     @media (max-width: 1300px) {
       font-size: 40px;
       margin-bottom: 20px;
@@ -1209,6 +1210,7 @@ html {
       }
     }
   }
+
   &__subtitle {
     position: relative;
     z-index: 4;
@@ -1225,11 +1227,12 @@ html {
     @media (max-width: 1024px) {
       max-width: 40%;
     }
-    
+
     @media (max-width: 769px) {
       max-width: unset;
     }
   }
+
   &__button {
     position: relative;
     z-index: 4;
@@ -1255,19 +1258,282 @@ html {
       box-shadow: 2px 2px 0 #000000;
     }
   }
+
   &__img {
     position: absolute;
     bottom: 0;
     right: 0;
     height: 120%;
     z-index: 2;
-    
+
     @media (max-width: 769px) {
       bottom: 0;
       right: 50%;
       height: 100%;
       transform: translateX(50%);
       filter: opacity(70%);
+    }
+  }
+}
+
+.records {
+  padding: 100px;
+  background-color: #D8FDFF;
+
+  @media (max-width: 1200px) {
+    padding: 40px 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 60px;
+  }
+
+  @media (max-width: 769px) {
+    padding: 40px 10px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 60px;
+    line-height: 120%;
+    margin-bottom: 40px;
+
+    @media (max-width: 1500px) {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 150px;
+
+    @media (max-width: 1500px) {
+      margin-bottom: 50px;
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 18px 25px;
+      background-color: #FFFACD;
+      border: 2px solid #000;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      box-shadow: 3px 3px 0 #000000;
+
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-size: 20px;
+      line-height: 120%;
+
+      @media (max-width: 1500px) {
+        padding: 10px 20px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        text-wrap: nowrap;
+      }
+
+      @media (max-width: 1300px) {
+        font-size: 16px;
+        padding: 10px 15px;
+        box-shadow: 2px 2px 0 #000000;
+      }
+    }
+
+    &-text {
+      font-family: 'Gilroy-Medium', sans-serif;
+      color: #6A6A6A;
+      font-size: 24px;
+      line-height: 120%;
+
+      @media (max-width: 1500px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 1300px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+
+    &-item {
+      padding: 17px 21px;
+      border: 1.5px solid #000;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      background: #fff;
+
+      @media (max-width: 1500px) {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 40px;
+    background-color: #FFA6A6;
+    border: 3px solid #000;
+    -webkit-border-radius: 56px;
+    -moz-border-radius: 56px;
+    border-radius: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+
+      @media (max-width: 1500px) {
+        height: 120%;
+        width: unset;
+        bottom: 0;
+        left: unset;
+        right: 0;
+        z-index: 0;
+        opacity: 0.8;
+      }
+    }
+
+    &-info {
+      flex: 0 0 50%;
+
+      @media (max-width: 1700px) {
+        flex: 0 0 60%;
+      }
+
+      @media (max-width: 1500px) {
+        position: relative;
+        z-index: 3;
+        flex: 0 0 100%;
+      }
+    }
+
+    &-quote {
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-size: 60px;
+      line-height: normal;
+      margin-bottom: 40px;
+
+      @media (max-width: 1500px) {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 1300px) {
+        font-size: 35px;
+      }
+
+      @media (max-width: 769px) {
+        font-size: 24px;
+      }
+    }
+
+    &-more {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 1500px) {
+        display: block;
+      }
+    }
+
+    &-about {
+
+      @media (max-width: 1500px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-name {
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-size: 24px;
+      line-height: normal;
+
+      @media (max-width: 1300px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 769px) {
+        font-size: 16px;
+      }
+    }
+
+    &-text {
+      font-family: 'Gilroy-Medium', sans-serif;
+      font-size: 20px;
+      line-height: normal;
+
+      @media (max-width: 1300px) {
+        font-size: 16px;
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 20px 40px;
+      background-color: #FFE500;
+
+      border: 2px solid #000;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+      box-shadow: 3px 3px 0 #000000;
+
+      @media (max-width: 1300px) {
+        padding: 10px 20px;
+      }
+
+      @media (max-width: 769px) {
+        border: 1px solid #000;
+        box-shadow: 2px 2px 0 #000000;
+      }
+
+      &-img {
+        @media (max-width: 769px) {
+          width: 16px;
+        }
+      }
+
+      &-text {
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 24px;
+        line-height: normal;
+
+        @media (max-width: 1300px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 769px) {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
