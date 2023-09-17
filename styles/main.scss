@@ -1937,7 +1937,7 @@ html {
 
 .featured {
   padding: 100px;
-  
+
   @media (max-width: 1300px) {
     padding: 40px 80px;
   }
@@ -2013,6 +2013,7 @@ html {
         border-radius: 12px;
       }
     }
+
     &-bg {
       width: 100%;
       height: 100%;
@@ -2069,5 +2070,221 @@ html {
 
   & &__item:nth-child(6) &__item-bg {
     background-color: #FFCCD4;
+  }
+}
+
+.blog {
+  padding: 100px;
+  background: #FBEBFF;
+
+  @media (max-width: 1300px) {
+    padding: 40px 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 60px;
+  }
+
+  @media (max-width: 769px) {
+    padding: 40px 10px;
+  }
+
+  &__title {
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 30px;
+
+    @media (max-width: 1300px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 35px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+
+    @media (max-width: 600px) {
+      justify-content: center;
+      padding-right: 0;
+    }
+
+    &-item {
+      background: #ffffff;
+      padding: 17px 21px;
+      border: 1px solid #000;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+
+      @media (max-width: 1300px) {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    flex: 0 1 33%;
+    padding: 18px;
+    border: 3px solid #000;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    border-radius: 41px;
+    background: #ffffff;
+    overflow: hidden;
+    
+    @media (max-width: 1500px) {
+      padding: 10px;
+    }
+
+    @media (max-width: 1300px) {
+      padding: 0;
+      border: 2px solid #000;
+    }
+
+    @media (max-width: 1024px) {
+      flex: 0 0 45%;
+    }
+
+    @media (max-width: 600px) {
+      flex: 0 0 80%;
+    }
+
+    &-course {
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      padding: 11px 15px;
+
+
+      border: 1px solid #000;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+
+      font-family: Gilroy-Medium, sans-serif;
+      font-size: 20px;
+      line-height: 120%;
+
+      @media (max-width: 1500px) {
+        top: 20px;
+        left: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
+      }
+
+      @media (max-width: 1300px) {
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    &-img {
+      width: 100%;
+
+      border: 3px solid #000;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+
+      @media (max-width: 1300px) {
+        border: unset;
+      }
+    }
+
+    &-title {
+      font-family: Gilroy-Bold, sans-serif;
+      font-size: 32px;
+      line-height: 120%;
+      margin-bottom: 70px;
+
+      @media (max-width: 1500px) {
+        font-size: 26px;
+      }
+
+      @media (max-width: 1300px) {
+        padding: 0 10px;
+        font-size: 24px;
+        margin-bottom: 60px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 80px;
+      }
+    }
+
+    &-info {
+      padding: 18px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 1024px) {
+        display: block;
+      }
+    }
+
+    &-date {
+      font-size: 20px;
+      line-height: 140%;
+
+      @media (max-width: 1500px) {
+        font-size: 16px;
+      }
+    }
+
+    &-read {
+      font-size: 20px;
+      line-height: 140%;
+
+      @media (max-width: 1500px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__item:nth-child(1) &__item-course {
+    background-color: #E4B9FF;
+  }
+
+  &__item:nth-child(2) &__item-course {
+    background-color: #83E9E3;
+  }
+
+  &__item:nth-child(3) &__item-course {
+    background-color: #C4EFAA;
+  }
+
+  &__item:nth-child(3) {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }
